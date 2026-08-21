@@ -215,8 +215,8 @@
             <div class="chips">
               <span>scikit-learn</span><span>TensorFlow</span
               ><span>PyTorch</span><span>NumPy</span><span>Pandas</span
-              ><span>OpenCV</span><span>Hugging Face</span
-              ><span>LangChain</span>
+              ><span>OpenCV</span><span>Hugging Face</span><span>LangChain</span
+              ><span>LangGraph</span><span>LangSmith</span>
             </div>
           </div>
           <div class="toolbox-group">
@@ -273,6 +273,46 @@
 
               <a
                 href="https://github.com/mafnan338/rag-pdf-chatbot"
+                target="_blank"
+                rel="noopener"
+              >
+                View repo →
+              </a>
+            </div>
+          </article>
+
+          <article class="model-card">
+            <div class="model-card-head">
+              <h3>LangGraph Tool Chatbot</h3>
+              <span class="badge badge-prototype">prototype</span>
+            </div>
+            <p class="model-card-task">
+              <span>task</span> Conversational agent with live web search &amp;
+              calculator tool-use
+            </p>
+            <p class="model-card-desc">
+              A Streamlit chat UI backed by a LangGraph agent running Groq's
+              <code>openai/gpt-oss-120b</code>, with DuckDuckGo web search and a
+              calculator as callable tools. Conversation state persists across
+              sessions via a SQLite checkpointer, with optional LangSmith
+              tracing for debugging agent runs. Containerized with Docker for
+              one-command deployment.
+            </p>
+            <div class="model-card-stack">
+              <span>LangGraph</span><span>Streamlit</span><span>Groq</span
+              ><span>SQLite</span><span>Docker</span><span>LangSmith</span>
+            </div>
+            <div class="model-card-foot">
+              <a
+                href="https://langgraph-chatbot-d9ge.onrender.com/"
+                target="_blank"
+                rel="noopener"
+              >
+                Live demo →
+              </a>
+
+              <a
+                href="https://github.com/mafnan338/LangGraph_Chatbot"
                 target="_blank"
                 rel="noopener"
               >
