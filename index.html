@@ -71,21 +71,35 @@
 
         <div class="hero-chart" aria-hidden="true">
           <svg viewBox="0 0 420 260" class="loss-svg">
+            <!-- Axes -->
             <line x1="40" y1="20" x2="40" y2="220" class="axis-line" />
             <line x1="40" y1="220" x2="400" y2="220" class="axis-line" />
+
+            <!-- Labels -->
             <text x="10" y="18" class="axis-label">skill</text>
-            <text x="370" y="240" class="axis-label">time</text>
+            <text x="370" y="240" class="axis-label">growth</text>
+
+            <!-- Grid -->
             <path
               class="loss-grid"
               d="M40,60 H400 M40,100 H400 M40,140 H400 M40,180 H400"
             />
+
+            <!-- Skill growth curve -->
             <path
               id="lossCurve"
               class="loss-curve"
-              d="M40,40 C 100,60 130,120 170,140 C 220,165 250,150 280,175 C 320,205 340,195 380,205"
+              d="M40,200
+                 C90,190 110,175 145,165
+                 C180,155 195,145 220,130
+                 C250,112 270,105 295,90
+                 C325,72 345,55 380,42"
             />
-            <circle id="lossDot" cx="380" cy="205" r="5" class="loss-dot" />
-            <text x="284" y="196" class="loss-here">you are here</text>
+
+            <!-- Current position -->
+            <circle id="lossDot" cx="380" cy="42" r="5" class="loss-dot" />
+
+            <text x="285" y="32" class="loss-here">you are here</text>
           </svg>
         </div>
       </section>
