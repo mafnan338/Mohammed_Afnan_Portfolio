@@ -701,3 +701,96 @@ main,
     padding: 54px 6vw;
   }
 }
+
+/* ==========================================================================
+     Research — co-authored paper (additive block; new classes only)
+     ========================================================================== */
+
+.badge-paper {
+  background: rgba(79, 209, 197, 0.16);
+  color: var(--accent);
+  border: 1px solid rgba(79, 209, 197, 0.35);
+}
+
+.research-card .model-card-head h3 {
+  min-width: 0;
+}
+
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 10px;
+}
+.metric {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 12px 14px;
+  background: rgba(236, 233, 225, 0.05);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+}
+.metric-value {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.1;
+  color: var(--accent);
+}
+.metric-label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  text-transform: lowercase;
+  color: var(--text-dim);
+}
+
+.research-authors {
+  font-size: 12.5px;
+  color: var(--text-dim);
+  margin: 0;
+}
+
+.paper-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+}
+/* keep .btn typography inside the card footer (overrides .model-card-foot a) */
+.research-card .model-card-foot .btn {
+  font-family: var(--font-body);
+  font-size: 14.5px;
+}
+.paper-meta {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--text-dim);
+}
+
+.paper-preview {
+  margin-top: 14px;
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+.paper-preview summary {
+  cursor: pointer;
+  padding: 10px 14px;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--text-dim);
+}
+.paper-preview summary:hover {
+  color: var(--accent);
+}
+.paper-preview object {
+  display: block;
+  width: 100%;
+  border-top: 1px solid var(--rule);
+}
+.paper-preview p {
+  margin: 0;
+  padding: 14px;
+  font-size: 13.5px;
+  color: var(--text-dim);
+}
